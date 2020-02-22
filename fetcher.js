@@ -11,8 +11,6 @@ request(site, (error, response, body) => {
     }
     let stats = fs.statSync(fileName);
     let fileSizeInBytes = stats.size;
-
     console.log(`Downloaded and saved ${fileSizeInBytes} bytes to ${fileName}`);
-
   });
 });
